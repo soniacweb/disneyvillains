@@ -5,7 +5,7 @@ const VillainForm = ({ data, handleSubmit, handleChange, errors }) => (
   
   <form action="" className="section-form hero is-fullheight" onSubmit={handleSubmit}>
     {/* We use bulma field, label and control classes for nice forms */}
-    <div class="container"> 
+    <div className="container"> 
       <div className="field">
         <div className="title">Submit Your Villain</div>
         <label htmlFor="" className="label">
