@@ -1,0 +1,266 @@
+
+// body {
+//   padding-bottom: 150px;
+// }
+
+html {
+  margin-bottom: -200px;
+}
+
+section.section-dark {
+  background-color: black;
+}
+
+.title, .subtitle {
+font-family: 'Righteous', cursive;
+letter-spacing: 1px;
+}
+
+.title {
+  font-size: 50px;
+}
+
+.titleOne {
+font-family: 'Righteous', cursive;
+color: white;
+letter-spacing: 1px;
+font-size: 80px;
+text-align: center;
+}
+
+.summary {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  text-align: justify;
+}
+
+h6 {
+  margin-top: 100px;
+  font-family: 'Fira Sans Condensed', sans-serif; 
+  font-size: 18px;
+}
+
+//home landing page
+// section.gif.hero.is-medium {
+//     background-image: url('../images/Disney_Villains.gif');
+//     background-size: cover;
+//     background-repeat: no-repeat;
+// }
+
+
+// section.image.hero.is-fullheight {
+//   background-image: url('../images/villians-2.jpg');
+//   // background-size: 1280px 750px;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+
+// section.villain.hero-is-medium {
+//   background-image: url('../images/villains-hero-3.jpg');
+// }
+
+
+//forms 
+section.section-form {
+  background-color: rgb(110, 2, 110);
+  // position: relative;
+  // margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  input.input {
+    width: 500px;
+  }
+}
+// villain form 
+// div.field.title {
+//   justify-content: center;
+//   align-items: center; 
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+section.section {
+  background-color: rgb(110, 2, 110);
+    position: relative;
+    // margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  input.input {
+    width: 500px;
+  }
+}
+
+div.card {
+  background-color: black;
+}
+
+button.button {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto,
+}
+   .villain-images:hover {
+    transform: scale(0.95);
+   
+    } 
+  
+    .villain-images {
+      width: 320px;
+      height: 405px;
+      transform-origin: 50% 65%;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      transition: 0.5s; 
+      /* width: 200px;
+      height: 280px; */
+      // margin-bottom: 5px; 
+     }
+   
+
+
+// div .card-image {
+//   margin-left: auto;
+//   margin-right: auto;
+//   transform-origin: 50% 65%;
+//   transition: transform 5s, filter 3s ease-in-out;
+//   filter: brightness(150%);
+// }
+
+//hover animation
+// div.card-image {
+//   transition: transform 2s, filter 1.5s ease-in-out;
+//   transform-origin: center center;
+//   filter: brightness(50%);
+// } 
+
+// div.card-image:hover {
+//   filter: brightness(100%);
+//   transform: scale(1.3);
+// }
+
+
+.white {
+  color: #ffffff;
+}
+
+.white:hover {
+  color:white;  
+}
+
+.navbar-item:hover {
+  background-color: rgb(110, 2, 110);
+ 
+}
+
+.disneylogo img {
+transform: scale(5);
+margin: 2px;
+margin-top:6px;
+}
+
+// img {
+//   position: relative;
+//   float: left;
+//   width:  100px;
+//   height: 100px;
+//   background-position: 50% 50%;
+//   background-repeat:   no-repeat;
+//   background-size:     cover;
+// }
+
+
+.has-background-black{
+  display: flex;
+  // flex-direction: row-reverse;
+  // align-items: stretch;
+}
+// .has-background-black > img{
+// width: 290px; /* width of container */
+// height: 300px; /* height of container */
+// overflow: hidden;
+// }
+
+// .VillainsYo {
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+//   // align-items: stretch;
+//   flex-wrap: wrap;
+// }
+
+div.section {
+  background-color:black;
+}
+section.section-form-hero-is-medium {
+  background-color: rgb(110, 2, 110);
+    // position: relative;
+    top: -70px;
+    width: 500px;
+    height: 500px;
+}
+
+
+
+.label {
+  color: white;
+}
+
+
+.label {
+  color: white;
+}
+
+div.title {
+  margin-top: 100px;
+  color: white; 
+}
+
+/*aichi's comment boxes */
+.name-bar.form-control {
+  width: 400px;
+  border: 4px solid, black;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+
+  } 
+  .comment-bar.form-control {
+    width: 400px;
+    /* height: 200px; */
+    border: 4px solid, black;
+    border-radius: 5px;
+    font-family: 'Fira Sans Condensed', sans-serif; 
+  }
+
+  button.comment-bar {
+   font-family: 'Fira Sans Condensed', sans-serif; 
+   background-color: black;
+   color: white;
+   font-size: 12px;
+   padding: 10px;
+   border-radius: 5px;
+   font-weight: bold;
+ 
+  }
+
+  button.comment-bar:hover {
+  /* height: 45px;
+  width: 90px; */
+  /* padding: 5px; */
+  /* font-size: 14px; */
+  transform: scale(1.1);
+  }
+  
+  .commentmessage {
+  margin-top: 20px;
+  font-family: 'Fira Sans Condensed', sans-serif; 
+
+  }
+
+  .name-bar {
+  font-family: 'Fira Sans Condensed', sans-serif; 
+ }
