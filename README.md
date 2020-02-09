@@ -2,4 +2,23 @@
 # Disney's Villains -FIRST MERN STACK PROJECT
 
 <img src="https://gph.is/g/apbL26v"/>
-![](Disney-Villains.gif)
+![]()
+
+## Overview
+
+### Preview
+
+
+
+## Technologies
+* HTML5
+* CSS3
+* Bulma
+* JavaScript(ES2019)
+* MongoDB & Mongoose
+* Express
+* React.js
+* Node.js
+* Babel
+* Webpack
+* GitHub
