@@ -47,16 +47,16 @@ npm run:front
 * Webpack
 * GitHub
 
-#Aim
+# Aim
 Build a full-stack application by making my own backend and own front-end. Use an Express API to serve ymy data from a Mongo database. Consume my API with a separate front-end built with React and Bulma.
 
-##Backend
+## Backend
 
-#Schema
+# Schema
 
-#Seeding my database
+# Seeding my database
 
-##Frontend
+## Frontend
 
-#React/Bulma
+# React/Bulma
 
