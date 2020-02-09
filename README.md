@@ -459,6 +459,9 @@ const VillainForm = ({ data, handleSubmit, handleChange, errors }) => (
 )
 ```
 
+## Challenges
+- I found authentication, and JWT webtokens quite a tricky concept to wrap my head around initially, however I enjoyed setting this up to better understand basic security checks on apps. 
+
 ## Modifications:
 - I could build on this concept, and play around with responsive web design making it friendly for other devices.
 - I would like to add videos and trailers under the 'single' pages for the villains and display them on the frontend using react modal.  
