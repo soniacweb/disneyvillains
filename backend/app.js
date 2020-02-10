@@ -7,7 +7,7 @@ const { dbURI, port } = require('./config/environment')
 const router = require('./router')
 const path = require('path')
 
-const errorHandler = require('./lib/errorHandler')
+// const errorHandler = require('./lib/errorHandler')
 
 
 // connect to mongo with mongoose, to start interacting with our DB in javascript
@@ -48,7 +48,7 @@ app.use('/api', router)
 
 app.use(express.static('dist'))
 
-app.use(errorHandler)
+// app.use(errorHandler)
 //***********************************************************************************
 
 // checking to see if the app is in production and on heroku
