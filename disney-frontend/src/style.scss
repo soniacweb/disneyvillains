@@ -84,6 +84,46 @@ p.title.light {
 color: white;
 }
 
+// iphone x
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3) { 
+
+.hero.is-fullheight {
+  min-height: 0vh;
+}
+}
+
+// iphone 6,7,8
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) { 
+  
+  .hero.is-fullheight {
+    min-height: 0vh;
+  } 
+}
+
+// iphone 5 & 5s
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) { 
+  .hero.is-fullheight {
+    min-height: 0vh;
+  } 
+}
+
+// ipad 
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+  .hero.is-fullheight {
+    min-height: 0vh;
+  } 
+}
+
+
 // div.tile.is-4.is-vertical.is-parent {
 //   background-color: black;
 // }
