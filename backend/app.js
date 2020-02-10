@@ -7,6 +7,10 @@ const { dbURI, port } = require('./config/environment')
 const router = require('./router')
 const path = require('path')
 
+// const errorHandler = require('./lib/errorHandler')
+// const router = require('./router')
+
+
 // connect to mongo with mongoose, to start interacting with our DB in javascript
 
 mongoose.connect( process.env.MONGODB_URI || dbURI,
@@ -21,14 +25,17 @@ const app = express()
 //This parser accepts any Unicode encoding of the body and supports automatic inflation 
 //of gzip and deflate encodings. A new body object containing the parsed data is populated 
 //on the request object after the middleware (i.e. req.body)
+
+//***************** middleware ************
 app.use(bodyParser.json())
 
-app.use((req, resp, next) => {
+app.use((req, res, next) => {
   console.log(`${req.method} to ${req.url}`)
+  res.header('Access-Control-Allow-Origin', '*')
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
   next() // to get to my routine logic
 })
 
-app.use('/api', router)
 
 
 //***************** This has all been moved and refactored in router.js************
@@ -37,12 +44,14 @@ app.use('/api', router)
 // app.get('/villains', villains.index) //passing functions to all of my routes
 // app.get('/villains/:id', villains.show)
 // app.put('/villains/:id', villains.update)
+
+app.use('/api', router)
 //***********************************************************************************
 
 // checking to see if the app is in production and on heroku
 
 if (process.env.NODE_ENV === 'production ') {
-  app.use(express.static('disneyvillains/dist'))
+  app.use(express.static('dist'))
   
   app.get('*', (req, resp) => {
     resp.sendFile(path.resolve('dist', 'index.html')) //relative path for heroku to read, might need to take out disneyvillains as could be considered dirname

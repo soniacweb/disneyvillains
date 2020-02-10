@@ -51,6 +51,7 @@
     "serve:front": "webpack-dev-server --mode-development",
     "serve": "webpack-dev-server --mode=development",
     "start": "node backend/app.js",
+    "build": "webpack -p",
     "heroku-postbuild": "npm install && npm run build"
   },
   "repository": {
