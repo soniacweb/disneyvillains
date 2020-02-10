@@ -33,7 +33,7 @@ const userSchema = new mongoose.Schema({ // Bulding a schema just like our anima
   password: { type: String, required: true  } // be careful not to make passwords unique!
 }, {
   timestamps: true, // provides a createdAt, and updatedAt field that work out of the box for free!
-toJSON: { // I'm only sending back the username in responses (take our password and other secure fields out)
+  toJSON: { // I'm only sending back the username in responses (take our password and other secure fields out)
     transform(doc, json) {
       return { username: json.username }
     }
