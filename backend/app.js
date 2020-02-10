@@ -5,10 +5,11 @@ const bodyParser = require('body-parser')
 // const villains = require('./controllers/villains')
 const { dbURI, port } = require('./config/environment')
 const router = require('./router')
+const path = require('path')
 
 // connect to mongo with mongoose, to start interacting with our DB in javascript
 
-mongoose.connect(dbURI,
+mongoose.connect( process.env.MONGODB_URI || dbURI,
   { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true },
   () => console.log('Mongo is connected'))
 
@@ -38,5 +39,16 @@ app.use('/api', router)
 // app.put('/villains/:id', villains.update)
 //***********************************************************************************
 
+// checking to see if the app is in production and on heroku
+
+if (process.env.NODE_ENV === 'production ') {
+  app.use(express.static('disneyvillains/dist'))
+  
+  app.get('*', (req, resp) => {
+    resp.sendFile(path.join(__dirname, 'disneyvillains', 'dist', 'index.html')) //relative path for heroku to read, might need to take out disneyvillains as could be considered dirname
+  })
+}
+
 // Listen on our port!
 app.listen(port, () => console.log(`We are good to go on port ${port}`))
+
