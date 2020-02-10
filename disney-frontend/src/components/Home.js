@@ -23,6 +23,22 @@ const Home = () => (
       </body>
     </section>
     
+   
+
+    <section className="image hero is-fullheight is-one-quarter-desktop is-one-third-tablet is-half-mobile"><img src='/images/villians-2.jpg'/> 
+      {/* <div className="hero-body"> */}
+      <div className="container has-background-black has-text-white has-text-centered is center"> 
+        {/* <h1 class="title"> */}
+        {/* Fullheight title */}
+        {/* </h1>
+    <h2 class="subtitle"> */}
+        {/* Fullheight subtitle */}
+        {/* </h2> */}
+    
+      </div>
+      {/* </div> */}
+    </section> 
+
     <div className="tile is-ancestor">
       <div className="tile is-4 is-vertical is-parent">
         <div className="tile is-child box">
@@ -43,20 +59,7 @@ const Home = () => (
         </div>
       </div>
     </div>
-
-    <section className="image hero is-fullheight is-one-quarter-desktop is-one-third-tablet is-half-mobile"><img src='/images/villians-2.jpg'/> 
-      {/* <div className="hero-body"> */}
-      <div className="container has-background-black has-text-white has-text-centered is center"> 
-        {/* <h1 class="title"> */}
-        {/* Fullheight title */}
-        {/* </h1>
-    <h2 class="subtitle"> */}
-        {/* Fullheight subtitle */}
-        {/* </h2> */}
-    
-      </div>
-      {/* </div> */}
-    </section>   
+      
     <footer className="footer">
       <div className="content has-text-centered">
         <p> Created for personal purposes, no affiliation to Disney. Made with a real curisoty for MERN by <a href="https://soniacweb.github.io/soniachoudhury.github.io/">Sonia Choudhury</a>.
