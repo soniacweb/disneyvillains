@@ -22,11 +22,6 @@ const Home = () => (
         </section>
       </body>
     </section>
-<<<<<<< HEAD
-=======
-    
-   
->>>>>>> 7bad4d519f315b41d7fb9e5bdffe754f38232455
 
     <section className="image hero is-fullheight is-one-quarter-desktop is-one-third-tablet is-half-mobile"><img src='/images/villians-2.jpg'/> 
       {/* <div className="hero-body"> */}
