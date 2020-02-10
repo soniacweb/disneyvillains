@@ -50,9 +50,8 @@
     "serve:back": "nodemon backend/app.js",
     "serve:front": "webpack-dev-server --mode-development",
     "serve": "webpack-dev-server --mode=development",
-    "build": "webpack -p",
     "start": "node backend/app.js",
-    "heroku-postbuild": "cd dist && npm install && npm run build"
+    "heroku-postbuild": "npm install && npm run build"
   },
   "repository": {
     "type": "git",
