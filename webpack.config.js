@@ -32,7 +32,7 @@ module.exports = {
         secure: false
       }
     }
-  },
+  }, 
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
