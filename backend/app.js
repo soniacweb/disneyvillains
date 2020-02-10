@@ -7,13 +7,13 @@ const { dbURI, port } = require('./config/environment')
 const router = require('./router')
 const path = require('path')
 
-// const errorHandler = require('./lib/errorHandler')
-// const router = require('./router')
+const errorHandler = require('./lib/errorHandler')
+const router = require('./router')
 
 
 // connect to mongo with mongoose, to start interacting with our DB in javascript
 
-mongoose.connect( process.env.MONGODB_URI || dbURI,
+mongoose.connect(dbURI,
   { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true },
   () => console.log('Mongo is connected'))
 
@@ -46,6 +46,10 @@ app.use((req, res, next) => {
 // app.put('/villains/:id', villains.update)
 
 app.use('/api', router)
+
+app.use(express.static('dist'))
+
+app.use(errorHandler)
 //***********************************************************************************
 
 // checking to see if the app is in production and on heroku
@@ -57,6 +61,13 @@ if (process.env.NODE_ENV === 'production ') {
     resp.sendFile(path.resolve('dist', 'index.html')) //relative path for heroku to read, might need to take out disneyvillains as could be considered dirname
   })
 }
+
+app.use('/api/*', (req, res) => res.status(404).json({ message: 'Not Found' }))
+
+app.use('/*', (req, res) => {
+  res.redirect('/not-found')
+})
+
 
 // Listen on our port!
 app.listen(port, () => console.log(`We are good to go on port ${port}`))
