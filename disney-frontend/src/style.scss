@@ -59,7 +59,29 @@ h6 {
 //   background-image: url('../images/villains-hero-3.jpg');
 // }
 
+section.section.dark {
+  background-color: black;
+}
 
+h2.subtitle.has-text-white.disney {
+  margin: 0 40px;
+}
+
+div.hero-body {
+  background-color: black;
+}
+
+div.tile.is-ancestor {
+  background-color: black;
+}
+
+// div.tile.is-4.is-vertical.is-parent {
+//   background-color: black;
+// }
+
+div p {
+  font-family: 'Fira Sans Condensed', sans-serif;
+}
 //forms 
 section.section-form {
   background-color: rgb(110, 2, 110);
@@ -184,13 +206,7 @@ margin-top:6px;
 // overflow: hidden;
 // }
 
-// .VillainsYo {
-//   display: flex;
-//   justify-content: space-around;
-//   align-items: center;
-//   // align-items: stretch;
-//   flex-wrap: wrap;
-// }
+
 
 div.section {
   background-color:black;
@@ -263,4 +279,10 @@ div.title {
 
   .name-bar {
   font-family: 'Fira Sans Condensed', sans-serif; 
+ }
+
+ .footer {
+   font-family: 'Fira Sans Condensed', sans-serif; 
+   background-color: black;
+   color: white;
  }

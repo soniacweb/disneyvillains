@@ -21,6 +21,8 @@ class Villains extends React.Component {
   render() {
     // console.log(this.state.villains)
     return ( <div className="section"> 
+
+  
       <h1 className="titleOne">Disney's Villains..</h1>
       <div className="parent">
         <div className="VillainsYo"> 

@@ -5,7 +5,7 @@ import axios from 'axios'
 import Auth from './lib/auth'
 
 import 'bulma'
-import './styles/style.scss'
+import './style.scss'
 // import styled from 'styled-components'
 
 import Home from './components/Home'

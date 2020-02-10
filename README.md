@@ -18,10 +18,10 @@ Mongod
 
 Back:
 npm run seed
-nodemon app.js
+npm run serve:back
 
 Front:
-npm run:front
+npm run serve:front
 
 ### Preview
 
