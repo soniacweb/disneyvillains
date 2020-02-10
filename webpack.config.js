@@ -3,7 +3,7 @@ const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: '/backend/app.js',
+  entry: './disney-frontend/src/app.js',
   output: {
     path: path.resolve('dist'),
     filename: 'bundle.js',
