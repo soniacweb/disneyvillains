@@ -45,7 +45,7 @@ if (process.env.NODE_ENV === 'production ') {
   app.use(express.static('disneyvillains/dist'))
   
   app.get('*', (req, resp) => {
-    resp.sendFile(path.join(__dirname, 'disneyvillains', 'dist', 'index.html')) //relative path for heroku to read, might need to take out disneyvillains as could be considered dirname
+    resp.sendFile(path.join(__dirname, 'dist', 'index.html')) //relative path for heroku to read, might need to take out disneyvillains as could be considered dirname
   })
 }
 
