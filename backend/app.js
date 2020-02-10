@@ -8,7 +8,6 @@ const router = require('./router')
 const path = require('path')
 
 const errorHandler = require('./lib/errorHandler')
-const router = require('./router')
 
 
 // connect to mongo with mongoose, to start interacting with our DB in javascript
