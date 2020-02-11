@@ -10,18 +10,18 @@
 
 This was a GA homework and side project I was playing around with using the MERN stack. A website that allows users to read up on the history of some of Disney's famous Villains and their origins- a rest API created and built by myself. The user can register and login using user authentication, and submit their own villains- information about other villains and leave comments on articles. The project included authentication and restful API integration.
 
-### For cloning/downloading
+# For cloning/downloading
 
-### Run the following commands: 
+## Run the following commands: 
 
-Mongod
+### Mongod
 
-Back:
-npm run seed
-npm run serve:back
+#### Back:
+- npm run seed
+- npm run serve:back
 
-Front:
-npm run serve:front
+#### Front:
+- npm run serve:front
 
 ### Preview
 
