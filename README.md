@@ -4,11 +4,13 @@
   <img width="630" height="150" src="https://media.giphy.com/media/mEEPs42d1vrO7oT88w/giphy.gif">
 </p>
 
-# Disney's Villains -FIRST MERN STACK PROJECT
+# Disney's Villains -First MERN stack project. 
 
 ## Overview
 
-This was a GA homework and side project I was playing around with using the MERN stack. A website that allows users to read up on the history of some of Disney's famous Villains and their origins- a rest API created and built by myself. The user can register and login using user authentication, and submit their own villains- information about other villains and leave comments on articles. The project included authentication and restful API integration.
+This was a GA homework and side project I was playing around with using the MERN stack. Disney Villains is a site that allows users to read up on the history of some of Disney's famous Villains and their origin stories.
+
+This app allows the user to register and login using user authentication, and a feature I want to include, submit their own information about a disney villain and leave comments on articles abpuot existing. The project included authentication and restful API integration built by me.
 
 # For cloning/downloading
 
