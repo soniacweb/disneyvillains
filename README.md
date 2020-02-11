@@ -12,6 +12,8 @@ This was a GA homework and side project I was playing around with using the MERN
 
 This app allows the user to register and login using user authentication, and a feature I want to include, submit their own information about a disney villain and leave comments on articles abpuot existing. The project included authentication and restful API integration built by me.
 
+Link can be found <a href="https://disneyvillains.herokuapp.com/">here.</a>
+
 # For cloning/downloading
 
 ## Run the following commands: 
