@@ -32,7 +32,7 @@ const VillainForm = ({ data, handleSubmit, handleChange, errors }) => (
         <div className="control">
           <input
             onChange={handleChange}
-            type="text"
+            type="file"
             name="image"
             className="input"
             value={data.image}

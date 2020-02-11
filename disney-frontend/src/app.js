@@ -41,14 +41,16 @@ const App = () => {
 
     <Switch>
    
-      <Route path="/villains/new" component={NewVillains} />
+     
       {/* <Route path="/vilains/new" component={VillainForm} /> */}
-      <Route path="/villains/edit/:id" component={EditVillain} />
+      <Route exact path="/" component={Home} />
+
       <Route  path="/villains/:id" component={SingleVillain} />
       <Route exact path="/villains" component={Villains} />
       <Route path="/register" component={Register} />
       <Route path="/login" component={Login} />
-      <Route exact path="/" component={Home} />
+      <Route path="/villains/new" component={NewVillains} />
+      <Route path="/villains/edit/:id" component={EditVillain} />
      
     </Switch>
   </BrowserRouter>
@@ -88,7 +90,7 @@ class EditVillain extends React.Component {
   handleSubmit(e) {
     e.preventDefault()
     const id = this.props.match.params.id
-    axios.put(`api/villains/${id}`, this.state.data, {
+    axios.put(`/api/villains/${id}`, this.state.data, {
       headers: { Authorization: `Bearer ${Auth.getToken()}` }
     })
       .then(resp => this.props.history.push(`/villains/${resp.data._id}`))

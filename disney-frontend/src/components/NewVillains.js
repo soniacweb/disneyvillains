@@ -25,7 +25,6 @@ class NewVillains extends React.Component {
   }
 
 
-
   handleChange(e) {
     // Keep all the previous data, except the field we just modified
     const data = { ...this.state.data, [e.target.name]: e.target.value }
@@ -58,3 +57,4 @@ class NewVillains extends React.Component {
 }
 
 export default NewVillains
+
