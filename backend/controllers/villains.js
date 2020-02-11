@@ -53,7 +53,7 @@ function remove(req, res) {
       if (!villain) return res.status(404).json({ message: 'Not Found' })
       return villain.remove()
     })
-    .then(() => res.status(200).json({ message: 'Your Disney Villain has been thwarted and deleted' }))
+    .then(() => res.status(200).json({ message: 'Your Disney Villain is now removed' }))
     .catch(err => console.log(err))
 }
 
