@@ -5,7 +5,7 @@ const Navbar = () => (
   <div className="navbar has-background-black">
     <div className="container">
       <div className="navbar-brand">
-        <Link className="disneylogo navbar-item has-text-white has-text-weight-bold is-size-5" to="/"><img src='../images/disneylogo.png' ></img></Link>
+        <Link className="disneylogo navbar-item has-text-white has-text-weight-bold is-size-5" to="/"><img src='https://i.imgur.com/IgqaRZy.png'/></Link>
       </div>
       <div className="navbar-menu is-active">
         <div className="navbar-end">
