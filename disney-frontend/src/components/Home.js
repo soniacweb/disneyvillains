@@ -2,7 +2,7 @@ import React from 'react'
 
 const Home = () => (
   <div className="parent">
-    <section className="gif hero is-medium is-one-quarter-desktop is-one-third-tablet is-half-mobile"><img src="https://giphy.com/embed/mEEPs42d1vrO7oT88w" /> 
+    <section className="gif hero is-medium is-one-quarter-desktop is-one-third-tablet is-half-mobile"><img src="http://www.giphy.com/embed/mEEPs42d1vrO7oT88w" /> 
       {/* <div className="hero-body"> */}
       <div className="container">
         <div className="image">
@@ -23,7 +23,7 @@ const Home = () => (
       </body>
     </section>
 
-    <section className="image hero is-fullheight is-one-quarter-desktop is-one-third-tablet is-half-mobile"><img src='/images/villians-2.jpg'/> 
+    <section className="image hero is-fullheight is-one-quarter-desktop is-one-third-tablet is-half-mobile"><img src='https://i.imgur.com/0Ik7yQG.jpg'/> 
       {/* <div className="hero-body"> */}
       <div className="container has-background-black has-text-white has-text-centered is center"> 
         {/* <h1 class="title"> */}
