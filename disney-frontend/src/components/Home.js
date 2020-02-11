@@ -2,12 +2,12 @@ import React from 'react'
 
 const Home = () => (
   <div className="parent">
-    <section className="gif hero is-medium is-one-quarter-desktop is-one-third-tablet is-half-mobile"><img src="http://www.giphy.com/embed/mEEPs42d1vrO7oT88w" /> 
+    <section className="gif hero is-large is-one-quarter-desktop is-one-third-tablet is-half-mobile">
       {/* <div className="hero-body"> */}
-      <div className="container">
-        <div className="image">
-        </div>
+      {/* <div className="container"> */}
+      <div className="image"><img src="https://media.giphy.com/media/mEEPs42d1vrO7oT88w/giphy.gif" /> 
       </div>
+      {/* </div> */}
       {/* </div> */}
 
       <body>
@@ -24,17 +24,10 @@ const Home = () => (
     </section>
 
     <section className="image hero is-fullheight is-one-quarter-desktop is-one-third-tablet is-half-mobile"><img src='https://i.imgur.com/0Ik7yQG.jpg'/> 
-      {/* <div className="hero-body"> */}
-      <div className="container has-background-black has-text-white has-text-centered is center"> 
-        {/* <h1 class="title"> */}
-        {/* Fullheight title */}
-        {/* </h1>
-    <h2 class="subtitle"> */}
-        {/* Fullheight subtitle */}
-        {/* </h2> */}
-    
+      <div className="hero-body">
+        <div className="container has-background-black has-text-white has-text-centered is center"> 
+        </div>
       </div>
-      {/* </div> */}
 
       <div className="tile is-ancestor">
         <div className="tile is-4 is-vertical is-parent">

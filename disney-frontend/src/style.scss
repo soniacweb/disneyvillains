@@ -3,11 +3,30 @@
 //   padding-bottom: 150px;
 // }
 
+.hero-body {
+  flex-grow: 0;
+  padding: 0;
+}
+
 html {
   margin-bottom: -200px;
 }
 
 section.section-dark {
+  background-color: black;
+}
+
+div.navbar-item {
+  background-color: black;
+  transition: 0.5s;
+}
+
+div.navbar-item:hover {
+  background-color: rgb(110, 2, 110);
+  transition: 0.5s;
+}
+
+.navbar-menu.is-active {
   background-color: black;
 }
 
@@ -84,16 +103,48 @@ p.title.light {
 color: white;
 }
 
+span.true {
+  background-color: rgb(110, 2, 110);
+}
+
 // iphone x
 @media only screen 
 and (min-device-width : 375px) 
 and (max-device-width : 812px)
 and (-webkit-device-pixel-ratio : 3) { 
 
+
+div.navbar-item {
+    background-color: black;
+    transition: 0.5s;
+  }
+
+div.navbar-item:hover {
+    background-color: rgb(110, 2, 110);
+    transition: 0.5s;
+  }
+
 .hero.is-fullheight {
   min-height: 0vh;
 }
+
+
+.section.section.dark {
+min-height: 20vh;
 }
+
+
+h1.title.has-text-white {
+  margin: 60px;
+}
+
+p {
+  font-size: 25px;
+}
+}
+
+
+
 
 // iphone 6,7,8
 @media only screen 
@@ -103,6 +154,18 @@ and (max-device-width : 667px) {
   .hero.is-fullheight {
     min-height: 0vh;
   } 
+.navbar-menu.is-active {
+  background-color: black;
+}
+
+.section.section.dark {
+  min-height: 20vh;
+  }
+
+// .hero-body {
+// padding: 0px;
+// }
+
 }
 
 // iphone 5 & 5s
@@ -110,19 +173,74 @@ and (max-device-width : 667px) {
 and (min-device-width : 320px) 
 and (max-device-width : 568px) { 
   .hero.is-fullheight {
-    min-height: 0vh;
+    min-height: 100vh;
   } 
+  .navbar-menu.is-active {
+    background-color: black;
+  }
+
+  .section.section.dark {
+    min-height: 20vh;
+    }
+
+    p {
+      font-size: 25px;
+    }
+
 }
+
+// iphone 5s
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) { 
+  section.section {
+    min-height: 100vh;
+}
+.section.section.dark {
+  min-height: 20vh;
+  }
+}
+
 
 // ipad 
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px)  { 
   .hero.is-fullheight {
-    min-height: 0vh;
-  } 
-}
+    min-height: 100vh;
+  }
 
+  div.navbar-item {
+    background-color: black;
+    transition: 0.5s;
+  }
+
+  div.navbar-item:hover {
+    background-color: rgb(110, 2, 110);
+    transition: 0.5s;
+  }
+  .navbar-menu.is-active {
+    background-color: black;
+  }
+  s
+  div.section {
+    // height: 2000px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  div.section.img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+  }
+  p {
+    font-size: 25px;
+  }
+  
+
+ }
 
 // div.tile.is-4.is-vertical.is-parent {
 //   background-color: black;
